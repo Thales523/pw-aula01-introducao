@@ -1,0 +1,17 @@
+import React, {useState} from 'react';
+
+export default props => {
+   
+    const [nome, setNome] = useState('Bartolomew JoJo Simpson')
+
+     return(
+        <div>
+         <button onClick={() => {
+props.quandoClicar(nome)
+          } }>
+Fornecer informações do aluno 
+         </button>
+        </div>
+
+    )
+}
